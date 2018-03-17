@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: #C0C0C0;
+}
+
+body div {
+  text-align: center;
+  width: 75%;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 10px;
+}
