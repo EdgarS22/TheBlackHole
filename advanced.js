@@ -20,8 +20,8 @@
       processInput();
     }
 
-}
 
+}
 
   /*
    * processInput()
@@ -49,8 +49,6 @@
       anything other than 1 or 2 words. This will simply set the innerHTML of
       the message element to errorText.
    */
-
-
 
 
  function processInput(){
@@ -94,8 +92,6 @@
 
  }
 
-
-
   /*
    * who(word)
    * This function sets the innerHTML of the message element to specific text,
@@ -128,13 +124,10 @@
      }
    }
 
-
-
-
   /*
    * what(word)
    * See above.
-   */
+*/
 function what(word){
  switch (word) {
    case "life":
@@ -150,6 +143,7 @@ function what(word){
     message.innerHTML = dunnoText;
   }
 }
+
   /*
    * where(word)
    * See above.
@@ -170,10 +164,12 @@ function what(word){
      }
 
    }
+
   /*
    * tell(word)
    * See above.
    */
+
  function tell(word){
    switch(word){
      case "joke":
@@ -190,10 +186,12 @@ function what(word){
    }
 
  }
+
   /*
    * show(word)
    * See above.
    */
+
 function show(word){
  switch (word) {
    case "dog":
@@ -219,5 +217,6 @@ function show(word){
 }
 
 }
+
 
 })();
