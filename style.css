@@ -1,14 +1,36 @@
 body {
   display: flex;
   flex-direction: row;
-  background-color: #C0C0C0;
-
+  background-image: url("img/space.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  font-family: 'Abel', sans-serif;
+  color: white;
 }
 
 body div {
   text-align: center;
   width: 75%;
-  border: 1px solid black;
+  border: 1px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
+}
+
+#blackhole{
+  width: 400px;
+  height: 400px;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+  border: 0px;
+}
+
+.centered {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

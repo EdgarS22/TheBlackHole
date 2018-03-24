@@ -69,14 +69,11 @@
          case "who":
            who(words[1]);
            break;
+         case "go":
+           go(words[1]);
+           break;
          case "what":
            what(words[1]);
-           break;
-         case "where":
-           where(words[1]);
-           break;
-         case "tell":
-           tell(words[1]);
            break;
          case "show":
            show(words[1]);
@@ -110,13 +107,13 @@
    function who(word){
      switch (word) {
        case "you":
-        message.innerHTML = "I'm Ale---I mean Axela";
+        message.innerHTML = "I am a hole in space";
         break;
        case "me":
-        message.innerHTML = "You are a homosapien";
+        message.innerHTML = "You are a living oranism";
         break;
-        case "devin":
-         message.innerHTML = "Devin is a human being that pretends to skateboard in order to look cool";
+        case "president":
+         message.innerHTML = "A horrible living organism";
          break;
        default:
         message.innerHTML = dunnoText;
@@ -130,14 +127,14 @@
 */
 function what(word){
  switch (word) {
-   case "life":
-    message.innerHTML = "life...duhh";
+   case "space":
+    message.innerHTML = "ummm...nothing";
      break;
    case "pi":
-    message.innerHTML = "3.14159265358979323846264338...";
+    message.innerHTML = "A type of food";
      break;
   case "love":
-    mesage.innerHTML = "umm...idk -_-";
+    mesage.innerHTML = "I'm just a hole in space...ask your mom";
     break;
    default:
     message.innerHTML = dunnoText;
@@ -149,43 +146,24 @@ function what(word){
    * See above.
    */
 
-   function where(word){
+   function go(word){
      switch (word) {
-       case "me":
-         message.innerHTML = "Check with Google Maps its more accurate";
+       case "youtube":
+         window.location = "https://www.youtube.com/";
          break;
-      case "atlantis":
-         message.innerHTML = "it doesnt exist...";
+      case "spotify":
+         window.location = "https://open.spotify.com/user/edgar_suarez/playlist/3TUzJiW0j3ko6cPmDPyoa7";
           break;
-      case "food":
-         message.innerHTML = "food is everywhere";
+      case "mail":
+         window.location = "https://mail.google.com/mail/u/0/#inbox";
        default:
         message.innerHTML = dunnoText;
      }
 
    }
 
-  /*
-   * tell(word)
-   * See above.
-   */
 
- function tell(word){
-   switch(word){
-     case "joke":
-      message.innerHTML = "you";
-        break;
-    case "poem":
-      message.innerHTML = "Roses are red, that much is true, but violets are purple, not f****** blue!"
-      break;
-    case "quote":
-     message.innerHTML = "You only live once, but if you do it right, once is enough"
-      break;
-    default:
-      message.innerHTML = dunnoText;
-   }
 
- }
 
   /*
    * show(word)
