@@ -53,7 +53,7 @@
 
  function processInput(){
    if(advancedDiv.contains(picture)){
-     picture.removeChild();
+     advancedDiv.removeChild(picture);
    }
 
    var words = input.value.toLowerCase().trim().split(" ");
