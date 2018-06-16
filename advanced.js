@@ -61,6 +61,8 @@
    if(words.length == 1){
      if(greetings.indexOf(words[0]) > -1){
        message.innerHTML = "wazzzaaa!";
+       var msg = new SpeechSynthesisUtterance("wazzaaa");
+       window.speechSynthesis.speak(msg);
      }else{
        message.innerHTML = errorText;
      }
@@ -108,12 +110,18 @@
      switch (word) {
        case "you":
         message.innerHTML = "I am a hole in space";
+        var msg = new SpeechSynthesisUtterance("I am a hole in space");
+        window.speechSynthesis.speak(msg);
         break;
        case "me":
         message.innerHTML = "You are a living oranism";
+        var msg = new SpeechSynthesisUtterance("You are a living organism");
+        window.speechSynthesis.speak(msg);
         break;
         case "president":
          message.innerHTML = "A horrible living organism";
+         var msg = new SpeechSynthesisUtterance("A horrible living organism");
+         window.speechSynthesis.speak(msg);
          break;
        default:
         message.innerHTML = dunnoText;
@@ -129,12 +137,18 @@ function what(word){
  switch (word) {
    case "space":
     message.innerHTML = "ummm...nothing";
+    var msg = new SpeechSynthesisUtterance("Um, nothing nothing at all");
+    window.speechSynthesis.speak(msg);
      break;
    case "pi":
-    message.innerHTML = "A type of food";
+    message.innerHTML = "3.14159265...";
+    var msg = new SpeechSynthesisUtterance("3.14159265358979 and so on");
+    window.speechSynthesis.speak(msg);
      break;
   case "love":
-    mesage.innerHTML = "I'm just a hole in space...ask your mom";
+    message.innerHTML = "I'm just a hole in space, ask your mom";
+    var msg = new SpeechSynthesisUtterance("I'm just a hole in space ask your mom");
+    window.speechSynthesis.speak(msg);
     break;
    default:
     message.innerHTML = dunnoText;
@@ -156,6 +170,8 @@ function what(word){
           break;
       case "mail":
          window.location = "https://mail.google.com/mail/u/0/#inbox";
+      case "portfolio":
+          window.location = "file:///Users/student/Desktop/Portfolio/index.html"
        default:
         message.innerHTML = dunnoText;
      }
@@ -177,19 +193,35 @@ function show(word){
     picture = document.createElement('IMG');
     picture.src = "img/dog.png";
     advancedDiv.appendChild(picture);
+    var msg = new SpeechSynthesisUtterance("Woof woof");
+    window.speechSynthesis.speak(msg);
      break;
   case "meme":
     message.innerHTML = "lol";
     picture = document.createElement('IMG');
     picture.src = "img/f9a.jpg";
     advancedDiv.appendChild(picture);
+    var msg = new SpeechSynthesisUtterance("Can't get fired if you don't have a job");
+    window.speechSynthesis.speak(msg);
     break;
  case "chava":
     message.innerHTML = "This is my friend";
     picture = document.createElement('IMG');
     picture.src = "img/chava.png";
     advancedDiv.appendChild(picture);
+    var msg = new SpeechSynthesisUtterance("This is my friend, Chava");
+    window.speechSynthesis.speak(msg);
     break;
+ case "destruction":
+    message.innerHTML = "-_-";
+    picture = document.createElement('IMG');
+    picture.src = "img/destruction.gif";
+    advancedDiv.appendChild(picture);
+    var msg = new SpeechSynthesisUtterance("booooooommmmmmm");
+    window.speechSynthesis.speak(msg);
+    break;
+
+
    default:
     message.innerHTML = dunnoText;
 }

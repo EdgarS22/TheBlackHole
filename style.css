@@ -30,7 +30,21 @@ body div {
 
 .centered {
     position: absolute;
-    top: 73%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.top-column{
+  width: 10%;
+  display: inline-block;
+}
+
+#top-middle{
+  width: 50%;
+  display: inline-block;
+}
+
+/* #shootingstar1{
+  height: 100px;
+  width: 100px;
+} */
